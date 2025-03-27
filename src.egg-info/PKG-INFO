@@ -1,0 +1,9 @@
+Metadata-Version: 2.2
+Name: src
+Version: 0.0.1
+Summary: its a wine Q package
+Author: PavanTeja5
+License: MLRIT
+Dynamic: author
+Dynamic: license
+Dynamic: summary
