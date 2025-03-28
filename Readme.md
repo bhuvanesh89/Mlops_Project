@@ -51,3 +51,11 @@ python setup.py sdist bdist_wheel
 Final Output
 
 https://wine-quality-prediction-3e08.onrender.com
+
+create an artifacts folder
+mkdir artifacts
+
+mlflow server command -
+  mlflow server --backend-store-uri sqlite:///mlflow.db --default-artifact-root ./artifacts --host 127.0.0.1 --port 1234
+
+dvc repro
