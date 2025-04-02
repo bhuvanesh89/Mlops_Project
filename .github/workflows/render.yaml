@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: mlops
+    env: python
+    repo: https://github.com/bhuvanesh89/Mlops_Project.git
+    branch: main-mlflow
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
+    envVars:
+      - key: MLFLOW_TRACKING_URI
+        value: "https://wine-quality-prediction-3e08.onrender.com/"
