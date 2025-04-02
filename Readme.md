@@ -1,9 +1,9 @@
 create env
 
-conda create -n wineq python=3.7 -y
+conda create -n wineq_new python=3.9.21 -y
 activate env
 
-conda activate wineq
+conda activate wineq_new
 created a req file
 
 install the req
