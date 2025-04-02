@@ -5,7 +5,7 @@ services:
     repo: https://github.com/bhuvanesh89/Mlops_Project.git
     branch: main-mlflow
     buildCommand: pip install -r requirements.txt
-    startCommand: mlflow server --backend-store-uri sqlite:///mlflow.db --default-artifact-root ./artifacts --host 0.0.0.0 --port 10000
+    startCommand: mlflow server --backend-store-uri sqlite:///mlflow.db --default-artifact-root ./artifacts --host 0.0.0.0 --port $PORT
     envVars:
       - key: MLFLOW_TRACKING_URI
         value: "https://mlops-project-51ho.onrender.com"
